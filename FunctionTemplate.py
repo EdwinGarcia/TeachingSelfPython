@@ -1,3 +1,13 @@
+#Recipe for Designing Functions:
+# 1. Examples
+# 2. Type Contract
+# 3. Header
+# 4. Description
+# 5. Body
+# 6. Test
+
+# If you write out your functions in this order, you can think about how things will work logically and it flows naturally.
+
 #header
 def are(base, height):
 
