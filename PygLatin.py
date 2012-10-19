@@ -4,7 +4,7 @@ def PygLatin(original):
         (string) -> string
         
 	Description:
-	This is a Pig Latin translator. A user enters a word or sentence
+	This is a Pig Latin translator. A user enters a word
 	and it is translated. The logic is written as such.
 	
 	1. Ask the user to input a word in English
@@ -27,7 +27,7 @@ original = input('Enter a word: ') #1. Ask the user to input a word in English
 if len(original) > 0 and original.isalpha(): #2. Validates input.
 	word = original.lower() #Converts input to lower case.
 	first = word[0] #Pulls the first letter of the input so we can check if it is a vowel or consonant.
-	if first == "a" or first == "e" or first == "i" or first == "o" or first == "u":
+	if first in "aeiou" == True:
 		new_word = word+pyg #3. If it is a vowel, we just add "ay" to the end.
 		print(new_word) #4. Display the translated result.
 	else:
