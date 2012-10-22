@@ -40,7 +40,7 @@ def count_nucleotides(dna, nucleotide):
     
     for char in dna:
         if char == nucleotide:
-            num_nucleotide = num_nucleotide + 1
+            num_nucleotide += 1
     return num_nucleotide
 
 
@@ -76,7 +76,7 @@ def is_valid_sequence(dna):
     
     for char in dna:
         if char not in nucleotides:
-            not_nucleotide = not_nucleotide + 1
+            not_nucleotide += 1
     if not_nucleotide == 0:
         return True
     else:
@@ -134,11 +134,11 @@ def get_complementary_sequence(nucleotides):
     complement = ''
     for char in nucleotides:
         if char == 'A':
-            complement = complement + 'T'
+            complement += 'T'
         if char == 'T':
-            complement = complement +  'A'
+            complement += 'A'
         if char == 'C':
-            complement = complement +  'G'
+            complement += 'G'
         if char == 'G':
-            complement = complement +  'C'
+            complement += 'C'
     return complement
