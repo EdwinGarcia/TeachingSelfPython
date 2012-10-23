@@ -133,12 +133,5 @@ def get_complementary_sequence(nucleotides):
     '''
     complement = ''
     for char in nucleotides:
-        if char == 'A':
-            complement += 'T'
-        if char == 'T':
-            complement += 'A'
-        if char == 'C':
-            complement += 'G'
-        if char == 'G':
-            complement += 'C'
+        complement += get_complement(char)
     return complement
